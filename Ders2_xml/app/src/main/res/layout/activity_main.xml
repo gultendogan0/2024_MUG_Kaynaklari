@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/adSoyadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Ad ve Soyad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/adSoyadEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ad ve Soyad Girin"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/adSoyadTextView"
+        app:layout_constraintTop_toBottomOf="@+id/adSoyadTextView" />
+
+    <TextView
+        android:id="@+id/ogrenciNoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Öğrenci No"
+        app:layout_constraintStart_toStartOf="@+id/adSoyadEditText"
+        app:layout_constraintTop_toBottomOf="@+id/adSoyadEditText" />
+
+    <EditText
+        android:id="@+id/ogrenciNoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Öğrenci No Girin"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/ogrenciNoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciNoTextView" />
+
+    <Button
+        android:id="@+id/ekleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ekle"
+        app:layout_constraintStart_toStartOf="@+id/ogrenciNoEditText"
+        app:layout_constraintTop_toBottomOf="@+id/ogrenciNoEditText" />
+
+    <TextView
+        android:id="@+id/ogrenciListesiTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Öğrenci Listesi"
+        app:layout_constraintStart_toStartOf="@+id/ekleButton"
+        app:layout_constraintTop_toBottomOf="@+id/ekleButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
