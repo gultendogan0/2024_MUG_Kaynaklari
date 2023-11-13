@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/firstNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="1.Sayı"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="2.Sayı"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumberEditText" />
+
+    <TextView
+        android:id="@+id/sonucTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Sonuç :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstNumberEditText" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:text="Topla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumberEditText" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="Çıkar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumberEditText" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Çarp"
+        app:layout_constraintStart_toStartOf="@+id/addButton"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Bölme"
+        app:layout_constraintEnd_toEndOf="@+id/subtractButton"
+        app:layout_constraintTop_toBottomOf="@+id/subtractButton" />
+
+    <Button
+        android:id="@+id/modeButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Mod Alma"
+        app:layout_constraintStart_toStartOf="@+id/multiplyButton"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyButton" />
+
+    <Button
+        android:id="@+id/cleanButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Temizle"
+        app:layout_constraintEnd_toEndOf="@+id/divideButton"
+        app:layout_constraintTop_toBottomOf="@+id/divideButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
