@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        android:id="@+id/detailImageView"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="City"
+        app:layout_constraintEnd_toEndOf="@+id/detailImageView"
+        app:layout_constraintStart_toStartOf="@+id/detailImageView"
+        app:layout_constraintTop_toBottomOf="@+id/detailImageView" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Date"
+        app:layout_constraintEnd_toEndOf="@+id/cityNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/cityNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/cityNameEditText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/dateEditText"
+        app:layout_constraintStart_toStartOf="@+id/dateEditText"
+        app:layout_constraintTop_toBottomOf="@+id/dateEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
